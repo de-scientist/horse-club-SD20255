@@ -26,3 +26,67 @@ body {
   font-family: var(--primary-font);
   font-size: 1.6rem;
 }
+
+/* Header stylings */
+.header-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-contact-icon {
+  --header-contact-icon-size: 6rem;
+  width: var(--header-contact-icon-size);
+  height: var(--header-contact-icon-size);
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-primary-dark)
+  );
+  color: var(--color-white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-contact-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-text {
+  text-transform: capitalize;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.nav-list {
+  border: 1px solid var(--color-black);
+  padding: 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.nav-list-item-link {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: var(--color-black);
+  font-weight: 600;
+  text-decoration: none;
+}
+/* End of Header stylings */
