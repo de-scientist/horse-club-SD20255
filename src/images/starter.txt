@@ -1,0 +1,8 @@
+Primary font: "Poppins", sans-serif
+Primary color: #f4512c
+Primary color (dark): #f53f50
+White color: #fff
+Black color: #292929
+Grey color: #8e8481
+Grey Light: #f8f9fa;
+Grey Lighter: #f0f0f0;
