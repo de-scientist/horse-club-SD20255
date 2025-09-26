@@ -334,3 +334,78 @@ body {
   font-weight: 200;
 }
 /* End of reasons section styling */
+
+/* Team section stylings */
+.team-section {
+  padding: 10rem 1rem;
+  background-image: repeating-linear-gradient(
+    to bottom right,
+    var(--color-grey-light),
+    var(--color-grey-lighter) 40px
+  );
+}
+
+.team-members-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.team-member-card {
+  width: 30rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--color-white);
+}
+
+.team-member-image-wrapper {
+  height: 20rem;
+  margin-bottom: 2rem;
+}
+
+.team-member-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.team-member-information {
+  padding: 1rem;
+}
+
+.team-member-name {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.team-member-position {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--color-grey);
+  margin-bottom: 1rem;
+}
+
+.team-member-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.team-member-social-url {
+  --team-member-social-url-size: 5rem;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  width: var(--team-member-social-url-size);
+  height: var(--team-member-social-url-size);
+  font-size: 2.4rem;
+  border-radius: 5px;
+}
+/* End of team section stylings */
