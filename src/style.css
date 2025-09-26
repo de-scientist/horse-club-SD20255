@@ -10,6 +10,11 @@
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -52,6 +57,15 @@ body {
 /* End of title stylings */
 
 /* Header stylings */
+.header {
+  position: sticky;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--color-white);
+  z-index: 100000000;
+}
+
 .header-top {
   display: flex;
   justify-content: space-around;
