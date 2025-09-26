@@ -301,3 +301,36 @@ body {
   color: var(--color-grey);
 }
 /* End of services styling */
+
+/* Reasons section styling */
+.reasons-section {
+  /* height: 100vh; */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./images/reasons-bg-img.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 10rem 5rem;
+}
+
+.reason {
+  width: 35rem;
+}
+
+.reason-title {
+  color: var(--color-white);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.reason-description {
+  font-size: 1.4rem;
+  color: var(--color-grey);
+  line-height: 2;
+  font-weight: 200;
+}
+/* End of reasons section styling */
