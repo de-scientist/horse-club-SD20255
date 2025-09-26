@@ -7,6 +7,7 @@
   --color-grey-light: #f8f9fa;
   --color-grey-lighter: #f0f0f0;
   --primary-font: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -412,7 +413,7 @@ body {
 
 /* blog section styling */
 .blog-section {
-  padding: 15rem 2rem;
+  padding: 10rem 2rem;
 }
 
 .blog-cards-container {
