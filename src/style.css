@@ -409,3 +409,81 @@ body {
   border-radius: 5px;
 }
 /* End of team section stylings */
+
+/* blog section styling */
+.blog-section {
+  padding: 15rem 2rem;
+}
+
+.blog-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.blog-card {
+  width: 40rem;
+}
+
+.blog-card-img-wrapper {
+  height: 25rem;
+}
+
+.blog-card-featured-image {
+  width: 100%;
+  height: 100%;
+  display: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.blog-card-chips-container {
+  margin: 1rem 0;
+}
+
+.blog-card-chip {
+  display: inline-block;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  background-color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  color: var(--color-white);
+}
+
+.blog-card-title {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.blog-card-title-title {
+  color: var(--color-black);
+}
+
+.blog-synopsis {
+  font-size: 1.4rem;
+  line-height: 2;
+  color: var(--color-grey);
+}
+
+.blog-card-meta-information {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.blog-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-primary);
+  font-size: 1.4rem;
+}
+
+.blog-card-meta a {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  text-transform: capitalize;
+}
+/* End of blog section styling */
