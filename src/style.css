@@ -11,6 +11,7 @@
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
   margin: 0;
   padding: 0;
 }
@@ -94,6 +95,67 @@ body {
   font-size: 1.4rem;
   color: var(--color-black);
   font-weight: 600;
-  text-decoration: none;
 }
 /* End of Header stylings */
+
+/* Hero section stylings */
+.hero-section {
+  --hero-section-gradient: rgba(0, 0, 0, 0.4);
+  background:
+    linear-gradient(var(--hero-section-gradient), var(--hero-section-gradient)),
+    url(./images/hero-bg.jpg);
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10rem 2rem;
+}
+
+.hero-textbox {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .hero-textbox {
+    width: 100%;
+  }
+}
+
+.hero-textbox-paragraph {
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-bottom: 2px solid var(--color-primary-dark);
+  padding: 1rem 5rem;
+  text-align: center;
+}
+
+.hero-textbox-heading {
+  color: var(--color-white);
+  text-transform: capitalize;
+  font-size: 5rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-textbox-heading {
+    font-size: 3rem;
+  }
+}
+
+.hero-textbox-cta {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  border-radius: 5px;
+}
+/* End of hero section stylings */
