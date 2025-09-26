@@ -487,3 +487,20 @@ body {
   text-transform: capitalize;
 }
 /* End of blog section styling */
+
+/* Footer stylings */
+.footer {
+  padding: 3rem;
+  background-color: var(--color-grey-lighter);
+}
+
+.footer-text {
+  text-align: center;
+  color: var(--color-grey);
+}
+
+.footer-text a {
+  color: var(--color-grey);
+  text-decoration: underline;
+}
+/* End of footer stylings */
