@@ -430,7 +430,7 @@ body {
   font-size: 1.4rem;
   color: var(--color-grey);
   margin-bottom: 1rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .team-member-socials {
