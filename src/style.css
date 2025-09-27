@@ -107,6 +107,7 @@ body {
 
 .header-contact-text a {
   color: var(--color-black);
+  text-decoration: underline;
 }
 
 .header-contact-text a:hover  {
