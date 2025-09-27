@@ -6,6 +6,7 @@
   --color-grey: #8b5e3c; /* Saddle brown for accents/natural feel */
   --color-grey-light: #f5e9da; /* Soft beige for backgrounds */
   --color-grey-lighter: #d4a017; /* Golden amber for highlights/buttons */
+  --color-beige: #f5e9da; /* Soft Beige */
   --primary-font: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
@@ -546,6 +547,134 @@ body {
   text-transform: capitalize;
 }
 /* End of blog section styling */
+
+/*Testimonial styling*/
+.testimonial-section {
+  background: var(--color-beige);
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.testimonial {
+  --color-brown: brown;
+  background: var(--color-white);
+  border: 1px solid var(--color-brown);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-0.5rem);
+}
+
+.testimonial p {
+  font-style: italic;
+  color: var(--color-black);
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-section h2 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+.testimonial h4 {
+  color: var(--color-primary-dark);
+  font-weight: bold;
+
+}
+/*End of Testimonial styling*/
+
+/*Start of gallery styling*/
+.gallery {
+  background: var(--color-white);
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  border: 0.3rem solid var(--color-primary);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+/*End of gallery styling*/
+
+/*Start of faq styling*/
+.faq {
+  background: var(--color-beige);
+  padding: 6rem 2rem;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  background: var(--color-white);
+  border: 1px solid var(--color-brown);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.faq-item h4 {
+  margin-bottom: 10px;
+  color: var(--color-primary);
+  font-weight: bold;
+  text-align: center;
+}
+
+.faq-item p {
+  color: var(--color-black);
+  line-height: 1.6;
+}
+/*End of faq styling*/
 
 /* Footer stylings */
 .footer {
