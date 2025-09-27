@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="icon" href="./src/images/horse.png" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -871,16 +872,16 @@
   <h2>Our Gallery</h2>
   <div class="gallery-grid">
     <a href="images/gallery/horse1.jpg" class="gallery-item">
-      <img src="images/gallery/horse1-thumb.jpg" alt="Horse riding session" />
+      <img src="./src/images/rider.jpg" alt="Horse riding session" />
     </a>
     <a href="images/gallery/horse2.jpg" class="gallery-item">
-      <img src="images/gallery/horse2-thumb.jpg" alt="Kids riding horses" />
+      <img src="./src/images/feeding.jpg" alt="Feeding the horse" />
     </a>
     <a href="images/gallery/horse3.jpg" class="gallery-item">
-      <img src="images/gallery/horse3-thumb.jpg" alt="Training field in Murang'a" />
+      <img src="./src/images/training-session.jpg" alt="Training field in Murang'a" />
     </a>
     <a href="images/gallery/horse4.jpg" class="gallery-item">
-      <img src="images/gallery/horse4-thumb.jpg" alt="Horse grooming session" />
+      <img src="./src/images/grooming.jpg" alt="Horse grooming session" />
     </a>
   </div>
 </section>
@@ -892,6 +893,49 @@
 </div>
 
 <!--End of Gallery-Section-->
+
+<!--Start of Contact-Section-->
+<!-- Contact Section -->
+<section class="contact">
+  <div class="contact-header">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you. Reach out to us through any of the channels below or send us a direct message.</p>
+  </div>
+
+  <!-- Contact Information -->
+  <div class="contact-info">
+    <div class="info-item">
+      <i class="fa-solid fa-phone"></i>
+      <p>+254 718 764 327</p>
+    </div>
+    <div class="info-item">
+      <i class="fa-solid fa-envelope"></i>
+      <p><a href="mailto:urhaven@apartments.com">urhaven@apartments.com</a></p>
+    </div>
+    <div class="info-item">
+      <i class="fa-brands fa-facebook"></i>
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+    </div>
+    <div class="info-item">
+      <i class="fa-brands fa-instagram"></i>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <form id="contact-form" class="contact-form">
+    <div class="form-row">
+      <input type="text" name="firstName" placeholder="First Name" required>
+      <input type="text" name="lastName" placeholder="Last Name" required>
+    </div>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <textarea name="message" placeholder="Your Message..." rows="6" required></textarea>
+    <button type="submit">Send Message</button>
+    <p id="form-status"></p>
+  </form>
+</section>
+
+<!--End of Contact-Section-->
 
 <!--Start of FAQ section-->
 <section id="faq" class="faq">
@@ -938,6 +982,12 @@
 
     <!--Start of script-->
     <script>
+  (function(){
+    emailjs.init("IcaDo3VicicKINrhX"); // Replace with your Public Key
+  })();
+</script>
+
+    <script>
 function smartEmail() {
   const email = "gitaumark502@gmail.com";
 
@@ -952,6 +1002,50 @@ function smartEmail() {
     window.open('https://mail.google.com/mail/?view=cm&to=${email}', "_blank");
   }
 }
+// Lightbox functionality
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('.lightbox .close');
+
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('click', e => {
+    e.preventDefault();
+    lightbox.style.display = 'flex';
+    lightboxImg.src = item.href;
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', e => {
+  if (e.target === lightbox) {
+    lightbox.style.display = 'none';
+  }
+});
+
+// Handle form submission
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // Show loading state
+  const status = document.getElementById('form-status');
+  status.textContent = "Sending...";
+  status.style.color = "gray";
+
+  emailjs.sendForm('service_we80e3m', 'template_wu0tzs9', this)
+    .then(() => {
+      status.textContent = "✅ Message sent successfully!";
+      status.style.color = "green";
+      this.reset();
+    }, (err) => {
+      status.textContent = "❌ Failed to send message. Please try again.";
+      status.style.color = "red";
+      console.error(err);
+    });
+});
+
     </script>
     <!--End of script-->
 
