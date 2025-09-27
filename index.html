@@ -29,7 +29,7 @@
             <i class="fa-solid fa-paper-plane"></i>
           </span>
           <p class="header-contact-text"> 
-            <a href="mailto:gitaumark502@gmail.com">Send us an Email</a>
+            <a href="javascript:void(0)" onclick="smartEmail()">Send us an Email</a>
           </p>
         </div>
         <!-- end of email address -->
@@ -820,5 +820,25 @@
       </p>
     </footer>
     <!-- End of the footer -->
+
+    <!--Start of script-->
+    <script>
+function smartEmail() {
+  const email = "gitaumark502@gmail.com";
+
+  //Simple check if user is on mobile
+  const isMobile = /iphone|ipad|ipod|Android/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    //open default email app
+    window.location.href = 'mailto:${email}';
+  } else {
+    // Open Gmail in browser
+    window.open('https://mail.google.com/mail/?view=cm&to=${email}', "_blank");
+  }
+}
+    </script>
+    <!--End of script-->
+
   </body>
 </html>
