@@ -1,11 +1,11 @@
 :root {
-  --color-primary: #f4512c;
-  --color-primary-dark: #f53f50;
-  --color-white: #fff;
-  --color-black: #292929;
-  --color-grey: #818481;
-  --color-grey-light: #f8f9fa;
-  --color-grey-lighter: #f0f0f0;
+  --color-primary: #2E4D34;       /* Deep Forest Green - main brand color */
+  --color-primary-dark: #1F3523;  /* Darker shade for hover/contrast */
+  --color-white: #FFFFFF;         /* Pure white for clean sections */
+  --color-black: #2B2B2B;         /* Charcoal grey for text */
+  --color-grey: #8B5E3C;          /* Saddle brown for accents/natural feel */
+  --color-grey-light: #F5E9DA;    /* Soft beige for backgrounds */
+  --color-grey-lighter: #D4A017;  /* Golden amber for highlights/buttons */
   --primary-font: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
@@ -103,6 +103,14 @@ body {
 .header-contact-text {
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+.header-contact-text a {
+  color: var(--color-black);
+}
+
+.header-contact-text a:hover  {
+  color: var(--color-primary-dark);
 }
 
 .logo {
