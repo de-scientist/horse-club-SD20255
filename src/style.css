@@ -1,11 +1,11 @@
 :root {
-  --color-primary: #2E4D34;       /* Deep Forest Green - main brand color */
-  --color-primary-dark: #1F3523;  /* Darker shade for hover/contrast */
-  --color-white: #FFFFFF;         /* Pure white for clean sections */
-  --color-black: #2B2B2B;         /* Charcoal grey for text */
-  --color-grey: #8B5E3C;          /* Saddle brown for accents/natural feel */
-  --color-grey-light: #F5E9DA;    /* Soft beige for backgrounds */
-  --color-grey-lighter: #D4A017;  /* Golden amber for highlights/buttons */
+  --color-primary: #2e4d34; /* Deep Forest Green - main brand color */
+  --color-primary-dark: #1f3523; /* Darker shade for hover/contrast */
+  --color-white: #ffffff; /* Pure white for clean sections */
+  --color-black: #2b2b2b; /* Charcoal grey for text */
+  --color-grey: #8b5e3c; /* Saddle brown for accents/natural feel */
+  --color-grey-light: #f5e9da; /* Soft beige for backgrounds */
+  --color-grey-lighter: #d4a017; /* Golden amber for highlights/buttons */
   --primary-font: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
@@ -110,7 +110,7 @@ body {
   text-decoration: underline;
 }
 
-.header-contact-text a:hover  {
+.header-contact-text a:hover {
   color: var(--color-primary-dark);
 }
 
@@ -519,6 +519,13 @@ body {
   color: var(--color-grey);
 }
 
+.blog-synopsis-ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+  color: var(--color-black);
+  font-size: 1.4rem;
+}
+
 .blog-card-meta-information {
   display: flex;
   gap: 3rem;
@@ -543,7 +550,7 @@ body {
 /* Footer stylings */
 .footer {
   padding: 3rem;
-  background-color: var(--color-grey-lighter);
+  /*background-color: var(--color-grey-lighter) ;*/
 }
 
 .footer-text {
@@ -552,7 +559,12 @@ body {
 }
 
 .footer-text a {
-  color: var(--color-grey);
+  color: var(--color-primary);
   text-decoration: underline;
 }
+
+.footer-text a:hover {
+  color: var(--color-grey);
+}
+
 /* End of footer stylings */
