@@ -407,7 +407,7 @@ body {
 
 .team-member-card {
   width: 30rem;
-  border-radius: 10px;
+  border-radius: 1rem;
   overflow: hidden;
   background-color: var(--color-white);
 }
